@@ -1,0 +1,46 @@
+:root {
+    --primary-2: #24222e;
+    --secondary-2: #ff0055;
+    --light-2: #f3f5f5;
+}
+
+body {
+    background-color: var(--primary-2);
+}
+
+.masthead-heading {
+    font-size: 60px !important;
+    animation: drop 2s ease;
+}
+
+.masthead-heading img {
+    height: 60px;
+    width: auto;
+}
+
+.masthead-subheading {
+    animation: drop2 2s ease;
+    margin-top: 20px;
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes drop2 {
+    0% {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
