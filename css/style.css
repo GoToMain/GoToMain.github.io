@@ -16,6 +16,7 @@ body {
 .masthead-heading img {
     height: 60px;
     width: auto;
+    margin: 0 4px;
 }
 
 .masthead-subheading {

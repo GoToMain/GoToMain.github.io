@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26.379mm" height="10.423mm" version="1.1" viewBox="0 0 26.379 10.423" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-44.653 -112.95)">
+  <text x="47.527153" y="119.74062" style="fill:#000000;font-family:sans-serif;font-size:14.111px;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="47.527153" y="119.74062" style="font-family:monospace;font-size:14.111px;font-weight:bold;stroke-width:.26458"/></text>
+  <text transform="scale(1.001 .99896)" x="66.287491" y="109.83648" style="fill:#000000;font-family:sans-serif;font-size:14.126px;line-height:1.25;stroke-width:.26486" xml:space="preserve"><tspan x="66.287491" y="109.83648" style="font-family:monospace;font-size:14.126px;stroke-width:.26486"/></text>
+  <text transform="rotate(180 64.302 118.9)" x="58.719391" y="135.39255" style="fill:#000000;font-family:monospace;font-size:14.111px;font-weight:bold;inline-size:8.84498;line-height:1.25;white-space:pre" xml:space="preserve"/>
+  <text x="47.533314" y="109.72205" style="fill:#000000;font-family:sans-serif;font-size:14.111px;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="47.533314" y="109.72205" style="font-family:mono;font-size:14.111px;font-weight:bold;stroke-width:.26458"/></text>
+  <text transform="scale(-1)" x="-72.121994" y="-114.87335" style="fill:#c04040;font-family:sans-serif;font-size:10.583px;letter-spacing:0px;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="-72.121994" y="-114.87335" style="fill:#c04040;font-family:Monaco;stroke-width:.26458"><tspan style="fill:#e1556f">{</tspan><tspan style="fill:#ffffff;letter-spacing:-1.0583px">oTo</tspan><tspan style="fill:#e1556f">}</tspan></tspan></text>
+  <text style="fill:#000000;font-family:sans-serif;font-size:10.583px;line-height:1.25;shape-inside:url(#rect969);white-space:pre" xml:space="preserve"/>
+ </g>
+</svg>
