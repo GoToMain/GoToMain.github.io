@@ -1,6 +1,6 @@
 :root {
     --primary-2: #24222e;
-    --secondary-2: #ff0055;
+    --secondary-2: #d9536c;
     --light-2: #f3f5f5;
 }
 
@@ -8,20 +8,219 @@ body {
     background-color: var(--primary-2);
 }
 
+a {
+    font-size: 20px;
+    color: var(--secondary-2);
+}
+
+a:hover {
+    color: var(--secondary-2);
+}
+
+.anim {
+    top: -200px;
+}
+
+.hide-nav {
+    top: 0px;
+    transition-duration: 0.6s;
+}
+
+section {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
+@media screen and (max-width:991.888px) {
+    .navbar {
+        top: 0px;
+    }
+}
+
+.movement-1 {
+    top: 0;
+    left: 100px;
+}
+
+.daling {
+    transition-duration: 0.6s;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
+    font-size: 40px;
+}
+
+.logo-test {
+    color: var(--light-2);
+    display: flex;
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.my-flex .logo-test img {
+    margin-bottom: 25px;
+}
+
+.my-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-flex .logo-test {
+    font-size: 50px;
+}
+
+.my-flex .rotate {
+    font-size: 55px;
+}
+
+.pink-bracet {
+    color: var(--secondary-2);
+}
+
+.navbar-brand img {
+    width: auto !important;
+    height: 40px !important;
+}
+
+.masthead {
+    height: 100vh !important;
+    padding: 40vh !important;
+}
+
 .masthead-heading {
     font-size: 60px !important;
-    animation: drop 2s ease;
+    animation: drop 1.5s ease;
 }
 
 .masthead-heading img {
     height: 60px;
     width: auto;
-    margin: 0 4px;
 }
 
 .masthead-subheading {
-    animation: drop2 2s ease;
-    margin-top: 20px;
+    animation: drop2 1.5s ease;
+    margin-top: 10px;
+    line-height: 1.2rem !important;
+}
+
+@media screen and (max-width:999px) {
+    .masthead-subheading {
+        width: 100%;
+    }
+    .masthead {
+        height: 100vh !important;
+        padding: 30vh 5vh!important;
+    }
+}
+
+.break {
+    display: flex;
+    justify-content: center;
+}
+
+.island-item {
+    width: 500px;
+    /* min-width: 310px; */
+    height: auto;
+    border: solid 1px #24222e56;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    color: rgb(110, 110, 110);
+    display: flex;
+    position: relative;
+}
+
+@media screen and (max-width:999px) {
+    .island-item {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .break {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.repo-head {
+    width: 100%;
+}
+
+.repo-h::before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f02e';
+    color: rgb(110, 110, 110);
+    margin-right: 5px;
+}
+
+.repo-info {
+    color: rgb(110, 110, 110);
+    position: absolute;
+    bottom: 10px;
+}
+
+.repo-info span {
+    margin-left: 15px;
+}
+
+.repo-dis {
+    width: 70%;
+}
+
+.repo {
+    background-color: rgb(255, 255, 255);
+    padding: 5rem 2rem;
+}
+
+.projects {
+    width: 80%;
+    margin: auto;
+}
+
+.balance::before {
+    font-family: "Font Awesome 5 Free";
+    content: '\&#9878;';
+    margin-right: 5px;
+}
+
+@media screen and (max-width:1200px) {}
+
+@media screen and (max-width:999px) {
+    .not-featured {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .island-item {
+        width: 310px;
+        flex-direction: column;
+    }
+    .repo {
+        padding: 5px;
+    }
+    .repo-head {
+        width: 100%;
+    }
+    .repo-dis {
+        width: 100%;
+    }
+}
+
+.projects h2 {
+    color: var(--primary-2);
 }
 
 @keyframes drop {
@@ -43,5 +242,156 @@ body {
     100% {
         opacity: 1;
         transform: translateY(0px);
+    }
+}
+
+.project .repo-info .language {
+    color: #999;
+    font-weight: bold;
+}
+
+.project .repo-info .C {
+    color: #228222;
+}
+
+.project .repo-info .Shell {
+    color: #82225d;
+}
+
+.project .repo-info .Linux {
+    color: #d83800;
+}
+
+#contributors {
+    background-color: rgb(241, 241, 241);
+}
+
+.my-container {
+    width: 80%;
+    margin: auto;
+    padding-top: 20px !important;
+}
+
+.my-container h2 {
+    padding-left: 20px;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler:focus {
+    border: none;
+}
+
+.contributors {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contri-card {
+    max-width: 200px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.contri-card img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #b7b6b8;
+    border-radius: 50%;
+}
+
+.contri-url {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    min-height: 100px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10% 0 10%;
+}
+
+.footer-div {
+    color: var(--light-2);
+    display: flex;
+    font-size: 20px;
+}
+
+.footer-div:nth-child(2) {
+    margin: 0 2px 0 2px;
+}
+
+.footer-div .logo-test {
+    font-size: 20px;
+}
+
+.footer-div .logo-test img {
+    /* margin-left: -10px; */
+    margin-top: 5px;
+}
+
+.footer-div .rotate {
+    font-size: 25px;
+}
+
+.footer-logo a {
+    font-size: 35px;
+    color: #fff;
+}
+
+.footer-logo a:hover {
+    color: rgb(190, 190, 190);
+}
+
+.gototop {
+    position: fixed;
+    bottom: -100px;
+    right: 10px;
+    transition-duration: 0.5s;
+    background-color: var(--light-2);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.gototop a {
+    font-size: 50px;
+    color: var(--secondary-2);
+}
+
+.gototop a:hover,
+:focus {
+    color: #a3162da2;
+}
+
+.gototop-move {
+    bottom: 10px;
+    transition-duration: 0.5s;
+}
+
+.a-color a {
+    color: var(--primary-2) !important;
+}
+
+.nav-thing {
+    height: 60px !important;
+}
+
+@media screen and (max-width:991px) {
+    .nav-thing {
+        height: auto !important;
+        padding: 5px 10px !important;
     }
 }

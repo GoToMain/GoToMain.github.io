@@ -4,28 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>goToMain</title>
+    <title>goToMain.io</title>
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/modifyed_boostrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/orgs.js"></script>
+    <script src="js/repos.js"></script>
+    <script src="js/displayMember.js"></script>
+    <script src="js/members.js"></script>
+    <script src="js/loaders.js"></script>
+    <script src="js/data/load_repos.js"></script>
+    <script src="js/data/load_members.js"></script>
+    <script src="js/opensource-site.js"></script>
 </head>
 
 <body>
+    <!-- Navigation-->
+    <div class="test fixed-top" id="test"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-thing"id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <img src="img/oto.png" style="height: 30px !important;" alt="logo">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right"  type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#repo">Repositories</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contributors">Contributors</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- Masthead-->
     <header class="masthead" id="home">
         <div class="container">
-            <div class="masthead-heading">g<img src="img/logo.svg" alt="">Main</div>
-            <div class="masthead-subheading">
-                “The real problem is that programmers have spent far too much time worrying about efficiency in the wrong places and at the wrong times; premature optimization is the root of all evil (or at least most of it) in programming.” - Donald Knuth
+            <div class="masthead-heading my-flex">
+                <div class="logo-test" style="margin-top: 10px;">
+                    <img src="img/goToMain.png" alt="logo">
+                </div>
             </div>
+            <div class="masthead-subheading">“The real problem is that programmers have spent far too much time worrying about efficiency in the wrong places and at the wrong times; premature optimization is the root of all evil (or at least most of it) in programming.” - Donald Knuth</div>
         </div>
     </header>
+
+    <main>
+        <section id="repo" class="repo">
+            <div class="projects">
+                <h2>Projects</h2>
+                <div class="not-featured"></div>
+            </div>
+        </section>
+
+        <section id="contributors" class="contri">
+            <div class="my-container">
+                <h2>Contributors</h2>
+                <div class="contributors"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-div">
+            <div>© 2020 goToMain.io</div>
+        </div>
+        <div class="footer-logo">
+            <a href="https://github.com/goToMain" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <div class="gototop">
+        <a href="#home" class="js-scroll-trigger"><i class="fas fa-chevron-circle-up"></i></a>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
     <!-- Third party plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    </body>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
 
 </html>
